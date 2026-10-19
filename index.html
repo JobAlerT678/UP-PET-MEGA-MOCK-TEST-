@@ -51,7 +51,7 @@ const firebaseConfig = {
   appId: "1:321567123534:web:2b69718c4339f63fdabb1f",
   measurementId: "G-D1N22NLFWL"
 };
-const firebaseConfigured = Boolean(firebaseConfig.apiKey && firebaseConfig.apiKey !== "PASTE_API_KEY_HERE" && firebaseConfig.projectId && firebaseConfig.projectId !== "PASTE_PROJECT_ID_HERE" && firebaseConfig.appId && firebaseConfig.appId !== "PASTE_APP_ID_HERE");
+const firebaseConfigured = Boolean(firebaseConfig.apiKey && firebaseConfig.apiKey !== "AIzaSyDz0AQQfcyFM9KgqeQOXuQTV6_nnnZxPHE" && firebaseConfig.projectId && firebaseConfig.projectId !== "job-alert-pet-mega-mock-test" && firebaseConfig.appId && firebaseConfig.appId !== "1:321567123534:web:2b69718c4339f63fdabb1f");
 let firebaseAuth = null, firestoreDb = null;
 if (firebaseConfigured && initializeAppFn && getAuthFn && getFirestoreFn) {
   try { const firebaseApp = initializeAppFn(firebaseConfig); firebaseAuth = getAuthFn(firebaseApp); firestoreDb = getFirestoreFn(firebaseApp); }
